@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "name": "skyplorbot",
+  "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+  "routes": [{ "src": "/(.*)", "dest": "index.js" }],
+  "env": {
+    "TELEGRAM_BOT_API": "@skyplor-telegram-bot-secret-key"
+  }
+}
